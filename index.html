@@ -8,47 +8,82 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/icon/style.css">
     <link rel="stylesheet" href="assets/plugins/lightslider/dist/css/lightslider.min.css">
+    <link rel="stylesheet" href="assets/icon/style.css">
+    <link rel="stylesheet" href="assets/css/hamburger.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Home</title>
 </head>
 
 <body class="body">
-    <section class="first-screen">
-        <header class="header">
-            <div class="header__inner">
-                <div class="header__logo logo">
-                    <a class="logo__link" href="#">
-                        <img class="logo__img" src="assets/img/logo02.png" alt="logo">
-                    </a>
-                </div>
 
-                <div class="header__main-menu">
-                    <nav class="menu" id="main_menu">
-                        <ul class="menu__list">
-                            <li class="menu__list-item">
-                                <a class="menu__link menu__link--active" href="javascript:void(0)" data-page="main">Home</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__link" href="javascript:void(0)" data-page="shop">Shop</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__link" href="javascript:void(0)" data-page="account">Account</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__link" href="javascript:void(0)" data-page="pages">Pages</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__link" href="javascript:void(0)" data-page="blog">Blog</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a class="menu__link" href="javascript:void(0)" data-page="components">Docs / Components</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+    <div class="mobile-menu">
+        <nav class="mobile">
+            <ul class="mobile__list">
+                <li class="mobile__list-item">
+                    <a class="mobile__link active" href="index.html" target="_blank">Home</a>
+                </li>
+                <li class="mobile__list-item">
+                    <a class="mobile__link" href="javascript:void(0)" target="_blank">Shop</a>
+                </li>
+                <li class="mobile__list-item">
+                    <a class="mobile__link" href="javascript:void(0)" target="_blank">Account</a>
+                </li>
+                <li class="mobile__list-item">
+                    <a class="mobile__link" href="about.html" target="_blank">About</a>
+                </li>
+                <li class="mobile__list-item">
+                    <a class="mobile__link" href="javascript:void(0)" target="_blank">Blog</a>
+                </li>
+                <li class="mobile__list-item">
+                    <a class="mobile__link" href="javascript:void(0)" target="_blank">Docs / Components</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu-shadow"></div>
+
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="assets/img/logo02.png" alt="logo">
+                </a>
             </div>
-        </header>
 
+            <div class="header__main-menu">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__link menu__link--active" href="index.html" target="_blank">Home</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="javascript:void(0)" target="_blank">Shop</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="javascript:void(0)" target="_blank">Account</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="about.html" target="_blank">About</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="javascript:void(0)" target="_blank">Blog</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__link" href="javascript:void(0)" target="_blank">Docs / Components</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <button class="header__hamburger header__hamburger--vortex" type="button">
+                    <span class="header__hamburger-box">
+                    <span class="header__hamburger-inner"></span>
+                    </span>
+                </button>
+        </div>
+    </header>
+
+    <section class="first-screen">
         <div class="container">
             <div class="first-screen__inner">
                 <div class="first-screen__content">
@@ -513,10 +548,12 @@
                     <img class="promotion__image" src="assets/img/image11.png" alt="pic">
                     <div class="promotion__title">Accessories</div>
                     <div class="promotion__discount">-40%</div>
+                    <a class="promotion__button  button__link" href="#" target="_blank">Shop now</a>
                 </div>
 
                 <div class="promotion__item item-3">
                     <img class="promotion__image" src="assets/img/image12.png" alt="pic">
+                    <a class="promotion__button  button__link" href="#" target="_blank">Shop now</a>
                 </div>
             </div>
         </div>
@@ -766,25 +803,25 @@
             </div>
 
             <div class="footer__main-menu">
-                <nav class="menu" id="main_menu">
+                <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__link menu__link--active" href="javascript:void(0)" data-page="main">Home</a>
+                            <a class="menu__link menu__link--active" href="index.html" target="_blank">Home</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="javascript:void(0)" data-page="shop">Shop</a>
+                            <a class="menu__link" href="javascript:void(0)" target="_blank">Shop</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="javascript:void(0)" data-page="account">Account</a>
+                            <a class="menu__link" href="javascript:void(0)" target="_blank">Account</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="javascript:void(0)" data-page="pages">Pages</a>
+                            <a class="menu__link" href="about.html" target="_blank">About</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="javascript:void(0)" data-page="blog">Blog</a>
+                            <a class="menu__link" href="javascript:void(0)" target="_blank">Blog</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__link" href="javascript:void(0)" data-page="components">Docs / Components</a>
+                            <a class="menu__link" href="javascript:void(0)" target="_blank">Docs / Components</a>
                         </li>
                     </ul>
                 </nav>

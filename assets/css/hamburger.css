@@ -1,72 +1,109 @@
 .header__hamburger {
-    position: absolute;
-    z-index: 1005;
-    top: 36px;
-    right: 30px;
-    width: 36px;
-    height: 36px;
-    border: none;
+    padding: 15px 15px;
+    display: inline-block;
     cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
     background-color: transparent;
-    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
-    background-size: 100%;
+    border: 0;
+    margin: 0;
+    overflow: visible;
 }
 
-.showClose {
-    background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+.header__hamburger:hover {
+    opacity: 0.7;
 }
 
-.navbar {
+.header__hamburger.is-active:hover {
+    opacity: 0.7;
+}
+
+.header__hamburger.is-active .header__hamburger-inner,
+.header__hamburger.is-active .header__hamburger-inner::before,
+.header__hamburger.is-active .header__hamburger-inner::after {
+    background-color: #000;
+}
+
+.header__hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.header__hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.header__hamburger-inner,
+.header__hamburger-inner::before,
+.header__hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
     position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.header__hamburger-inner::before,
+.header__hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.header__hamburger-inner::before {
+    top: -10px;
+}
+
+.header__hamburger-inner::after {
+    bottom: -10px;
+}
+
+.header__hamburger-inner {
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.header__hamburger--vortex .header__hamburger-inner::before,
+.header__hamburger--vortex .header__hamburger-inner::after {
+    transition-duration: 0s;
+    transition-delay: 0.1s;
+    transition-timing-function: linear;
+}
+
+.header__hamburger--vortex .header__hamburger-inner::before {
+    transition-property: top, opacity;
+}
+
+.header__hamburger--vortex .header__hamburger-inner::after {
+    transition-property: bottom, transform;
+}
+
+.header__hamburger--vortex.is-active .header__hamburger-inner {
+    transform: rotate(765deg);
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.header__hamburger--vortex.is-active .header__hamburger-inner::before,
+.header__hamburger--vortex.is-active .header__hamburger-inner::after {
+    transition-delay: 0s;
+}
+
+.header__hamburger--vortex.is-active .header__hamburger-inner::before {
     top: 0;
-    left: 0;
-    background: url('../img/image01.png') center center no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    color: #fff;
-    transform: translateY(-100%);
-    transition: transform 0.2s ease;
+    opacity: 0;
 }
 
-.showNav {
-    /* show the menu */
-    transform: translateY(0);
-}
-
-.navbar ul {
-    width: 100%;
-    height: 100%;
-    list-style: none;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.navbar ul li a {
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    padding-bottom: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-}
-
-.navbar ul li:hover {
-    transform: scale(1.4);
-}
-
-.navbar ul li a:hover,
-.navbar ul li a:focus {
-    background: -moz-linear-gradient(45deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255, 0, 0, 1)), color-stop(50%, rgba(255, 255, 0, 1)), color-stop(100%, rgba(255, 0, 0, 1)));
-    background: -webkit-linear-gradient(45deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
-    background: -o-linear-gradient(45deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
-    background: -ms-linear-gradient(45deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
-    background: linear-gradient(45deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.header__hamburger--vortex.is-active .header__hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(90deg);
 }
