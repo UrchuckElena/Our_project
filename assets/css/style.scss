@@ -56,7 +56,7 @@ button {
     justify-content: center;
     padding-top: 50px;
     &__list-item {
-        padding: 35px 20px 0px 20px;
+        padding: 35px 20px 0 20px;
     }
     &__link {
         font-family: 'Montserrat', sans-serif;
@@ -97,7 +97,6 @@ button {
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
     z-index: 1050;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
@@ -111,7 +110,7 @@ button {
         justify-content: flex-start;
         align-items: center;
         padding-left: 32px;
-        margin: 0px;
+        margin: 0;
     }
     &__logo {
         width: 206px;
@@ -169,7 +168,7 @@ button {
     color: #fff;
     padding-top: 10px;
     &__inner {
-        padding: 250px 0px;
+        padding: 250px 0;
     }
     &__content {
         width: 60%;
@@ -177,7 +176,7 @@ button {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 30px 0px;
+        padding: 30px 0;
     }
     &__text {
         font-weight: 500;
@@ -222,7 +221,7 @@ button {
 @media only screen and (max-width: 940px) {
     .first-screen {
         &__inner {
-            padding: 100px 0px;
+            padding: 100px 0;
         }
         &__content {
             width: 90%;
@@ -243,8 +242,8 @@ button {
             display: none;
         }
         &__logo {
-            margin-left: 0px;
-            margin-right: 0px;
+            margin-left: 0;
+            margin-right: 0;
         }
         &__hamburger {
             display: block;
@@ -373,7 +372,7 @@ button {
             max-width: 530px;
         }
         .row-1 {
-            padding-bottom: 0px;
+            padding-bottom: 0;
         }
         &__products-item {
             padding-bottom: 60px;
@@ -399,7 +398,7 @@ button {
 .promotion {
     color: #fff;
     &__inner {
-        padding: 49px 0px;
+        padding: 49px 0;
         display: grid;
         grid-template-columns: repeat(3, 33.33333%);
     }
@@ -453,7 +452,7 @@ button {
         font-weight: bold;
         font-size: 24px;
         line-height: 36px;
-        text-shadow: 0px 13px 19px rgba(0, 0, 0, 0.24);
+        text-shadow: 0 13px 19px rgba(0, 0, 0, 0.24);
     }
     &__discount {
         position: absolute;
@@ -470,7 +469,7 @@ button {
 @media only screen and (max-width: 650px) {
     .promotion {
         &__inner {
-            padding: 10px 0px;
+            padding: 10px 0;
             grid: repeat(3, 1fr) / repeat(1, 1fr);
             max-width: 370px;
         }
@@ -520,7 +519,7 @@ button {
         line-height: 30px;
         padding-bottom: 14px;
         color: #252B42;
-        margin-left: 0px;
+        margin-left: 0;
         &:hover {
             color: #a701a7;
             text-decoration: underline;
@@ -530,7 +529,7 @@ button {
         font-weight: 500;
         font-size: 24px;
         line-height: 38px;
-        margin-left: 0px;
+        margin-left: 0;
     }
     .favorite {
         position: absolute;
@@ -557,7 +556,7 @@ button {
     background-color: #fff8f8;
     color: #858585;
     &__inner {
-        padding: 34px 0px;
+        padding: 34px 0;
     }
     &__title {
         text-align: center;
@@ -571,22 +570,20 @@ button {
         max-width: calc(100% - 37px);
         display: grid;
         grid-template-columns: repeat(3, 33.33333%);
-        padding: 30px 0px;
+        padding: 30px 0;
     }
     &__card {
         justify-self: stretch;
         align-self: stretch;
-        width: 100%;
         height: 100%;
         img {
             width: 100%;
             height: auto;
             object-fit: cover;
         }
-        width: 90%;
         display: flex;
         flex-direction: column;
-        box-shadow: 0px 13px 19px rgba(0,
+        box-shadow: 0 13px 19px rgba(0,
         0,
         0,
         0.07);
@@ -597,10 +594,10 @@ button {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin-left: 0px;
+            margin-left: 0;
         }
         &-title {
-            margin-left: 0px;
+            margin-left: 0;
             padding-bottom: 21px;
         }
     }
@@ -619,7 +616,7 @@ button {
         font-size: 16px;
         line-height: 24px;
         color: #808080;
-        margin-left: 0px;
+        margin-left: 0;
         text-transform: uppercase;
         padding-bottom: 12px;
     }
@@ -627,14 +624,14 @@ button {
         font-weight: 500;
         font-size: 16px;
         line-height: 28px;
-        margin-left: 0px;
+        margin-left: 0;
         padding-bottom: 20px;
     }
     &__menu {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: 0px;
+        margin-left: 0;
         &-item {
             margin-right: 15px;
             &:hover {
@@ -656,12 +653,12 @@ button {
 @media only screen and (max-width: 960px) {
     .blog {
         &__inner {
-            padding: 10px 0px;
+            padding: 10px 0;
         }
         &__content {
             grid: repeat(3, 1fr) / repeat(1, 1fr);
             max-width: 331px;
-            padding: 0px;
+            padding: 0;
         }
     }
 }
@@ -764,7 +761,6 @@ button {
         cursor: pointer;
         border-radius: 50%;
         z-index: 50;
-        border: 1px solid #fff;
         border: 1px solid rgba(255, 255, 255, 0.4);
         position: relative;
         background: rgba(222, 222, 222, 0.2);
@@ -825,10 +821,10 @@ button {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 0px;
+        margin: 0;
     }
     &__logo {
-        margin-left: 0px;
+        margin-left: 0;
         margin-right: 46px;
     }
     &__main-menu {
@@ -881,7 +877,7 @@ button {
     padding-right: 10px;
     &__list-item {
         display: inline-block;
-        margin: 0px;
+        margin: 0;
         position: relative;
         &:not(:last-child) {
             margin-right: 21px;
@@ -891,11 +887,9 @@ button {
             display: block;
             content: "";
             height: 3px;
-            width: 0%;
             left: 50%;
             position: absolute;
             -webkit-transition: width .3s ease-in-out;
-            -moz--transition: width .3s ease-in-out;
             transition: width .3s ease-in-out;
             -webkit-transform: translateX(-50%);
             -moz-transform: translateX(-50%);
@@ -918,7 +912,7 @@ button {
 
 @media only screen and (max-width: 1170px) {
     .footer {
-        padding: 0px;
+        padding: 0;
         margin: 0 auto;
         &__inner {
             flex-direction: column;
@@ -984,16 +978,15 @@ button {
     display: flex;
     align-items: center;
     padding-left: 59px;
-    padding-top: 124px;
-    padding-bottom: 30px;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    margin-top: 108px;
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
     a {
         font-weight: 400;
         color: #737373;
         letter-spacing: 0.2px;
         line-height: 28px;
-        margin: 0px;
+        margin: 0;
     }
     .right_arrow {
         display: inline-block;
@@ -1076,7 +1069,7 @@ button {
 @media only screen and (max-width: 770px) {
     .about {
         &__inner {
-            padding: 70px 0px;
+            padding: 70px 0;
         }
     }
 }
@@ -1088,7 +1081,7 @@ button {
 }
 
 .content {
-    padding: 100px 0px;
+    padding: 100px 0;
     &__inner {
         width: 80%;
         display: flex;
@@ -1098,8 +1091,8 @@ button {
     }
     &__text {
         width: 50%;
-        padding: 43px 15px 43px 0px;
-        margin-left: 0px;
+        padding: 43px 15px 43px 0;
+        margin-left: 0;
         margin-right: 100px;
         &-title {
             font-weight: bold;
@@ -1117,7 +1110,7 @@ button {
     }
     &__img {
         width: 50%;
-        margin-right: 0px;
+        margin-right: 0;
         padding: 16.5px;
         & img {
             width: 100%;
@@ -1129,7 +1122,7 @@ button {
 
 @media only screen and (max-width: 960px) {
     .content {
-        padding: 20px 0px;
+        padding: 20px 0;
         &__inner {
             width: 90%;
             flex-direction: column;
@@ -1139,24 +1132,24 @@ button {
         }
         &__img {
             width: 90%;
-            margin: 0px;
+            margin: 0;
         }
         &__text {
             width: 90%;
             text-align: center;
             margin: 0 auto;
-            padding: 0px;
+            padding: 0;
         }
     }
 }
 
 .ourteam {
-    padding: 100px 0px;
+    padding: 100px 0;
     color: #737373;
     &__top {
         width: 44.5%;
         text-align: center;
-        padding: 10px 0px;
+        padding: 10px 0;
         margin-bottom: 60px;
         &-title {
             font-weight: bold;
@@ -1169,11 +1162,11 @@ button {
             font-weight: 600;
             font-size: 16px;
             line-height: 28px;
-            padding: 0px 17px;
+            padding: 0 17px;
         }
     }
     &__content {
-        padding: 50px 0px;
+        padding: 50px 0;
     }
     &__list {
         width: 82.2%;
@@ -1210,7 +1203,7 @@ button {
             font-size: 16px;
             line-height: 28px;
             margin-bottom: 20px;
-            padding: 0px 10px;
+            padding: 0 10px;
         }
         &__image {
             width: 100%;
@@ -1226,10 +1219,10 @@ button {
 
 @media only screen and (max-width: 1075px) {
     .ourteam {
-        padding: 10px 0px;
+        padding: 10px 0;
         &__top {
             width: 90%;
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
         &__list {
             grid-template-columns: repeat(2, 200px);
@@ -1241,7 +1234,7 @@ button {
 
 @media only screen and (max-width: 850px) {
     .ourteam {
-        padding: 10px 0px;
+        padding: 10px 0;
         &__list {
             grid-template-columns: repeat(1, 200px);
             grid-template-rows: repeat(6, 462px);
@@ -1257,7 +1250,7 @@ button {
 
 .notfound {
     background: #fafafa;
-    padding: 120px 0px;
+    padding: 120px 0;
     text-align: center;
     &__inner {
         color: #737373;
@@ -1294,7 +1287,7 @@ button {
 
 @media only screen and (max-width: 600px) {
     .notfound {
-        padding: 150px 0px 50px 0px;
+        padding: 150px 0 50px 0;
         &__pretitle {
             font-weight: bold;
             font-size: 16px;
