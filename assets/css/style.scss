@@ -1171,7 +1171,7 @@ button {
     &__list {
         width: 82.2%;
         display: grid;
-        grid-template-columns: repeat(3, 200px);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 462px);
         grid-gap: 100px;
     }
