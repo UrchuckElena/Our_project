@@ -12,6 +12,7 @@
     border: 0;
     margin: 0;
     overflow: visible;
+    outline: 0 none;
 }
 
 .header__hamburger:hover {
@@ -33,6 +34,7 @@
     height: 24px;
     display: inline-block;
     position: relative;
+    outline: 0 none;
 }
 
 .header__hamburger-inner {
