@@ -14,11 +14,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-a,
-button {
-  transition: all 0.5s ease;
-}
-
 ul,
 ol {
   list-style: none;
@@ -141,22 +136,7 @@ a {
   line-height: 30px;
   letter-spacing: 0.2px;
   color: #252B42;
-  padding-bottom: 10px;
-}
-.help .accordion_help .accordion_wrap .blocks_accordion .questions .q_1 {
-  width: 233px;
-}
-.help .accordion_help .accordion_wrap .blocks_accordion .questions .q_2 {
-  width: 419px;
-}
-.help .accordion_help .accordion_wrap .blocks_accordion .questions .q_3 {
-  width: 480px;
-}
-.help .accordion_help .accordion_wrap .blocks_accordion .questions .q_4 {
-  width: 267px;
-}
-.help .accordion_help .accordion_wrap .blocks_accordion .questions .q_5 {
-  width: 210px;
+  padding: 0 44px 10px 0;
 }
 .help .accordion_help .accordion_wrap .blocks_accordion .text {
   display: none;
@@ -167,7 +147,7 @@ a {
   line-height: 28px;
   letter-spacing: 0.2px;
   color: #252B42;
-  padding: 21px 0 51px 0;
+  padding: 20px 50px 50px 0;
 }
 
 @media screen and (max-width: 520px) {
@@ -179,18 +159,6 @@ a {
   .help .ask_header .help_header h1 {
     font-size: 40px;
     line-height: 57px;
-  }
-
-  .help .accordion .accordion_wrap .col_01 .questions .q_2 {
-    width: 250px;
-  }
-
-  .help .accordion .accordion_wrap .col_01 .questions .q_3 {
-    width: 250px;
-  }
-
-  .help .accordion .accordion_wrap .col_01 .questions .q_4 {
-    width: 250px;
   }
 }
 @media screen and (max-width: 375px) {
