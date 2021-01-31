@@ -606,7 +606,7 @@ a {
 }
 #card_item #product_list .product_item p {
   margin: 10px 0;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.1px;

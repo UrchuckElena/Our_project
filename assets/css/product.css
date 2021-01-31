@@ -197,7 +197,7 @@ a {
   padding-top: 29px;
 }
 .product_main .product_preview .product_sidebar .products_color span {
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.2px;
