@@ -3,6 +3,11 @@
     margin: 0 auto;
 }
 
+a,
+button {
+    transition: all .5s ease;
+}
+
 .header {
     .menu__list-item {
         & a:after,
@@ -51,4 +56,15 @@
 
 .post {
     background-attachment: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        &__inner {
+            padding-top: 150px;
+        }
+    }
+    .pre_menu {
+        padding: 20px;
+    }
 }

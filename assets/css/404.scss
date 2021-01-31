@@ -3,6 +3,11 @@
     margin: 0 auto;
 }
 
+a,
+button {
+    transition: all .5s ease;
+}
+
 .header {
     .menu__list-item {
         & a:after,
@@ -46,5 +51,30 @@
     color: #000;
     &:hover {
         color: #2091f9;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .notfound {
+        padding: 150px 0 50px 0;
+        &__pretitle {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__title {
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 57px;
+        }
+        &__subtitle {
+            width: 90%;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    .pre_menu {
+        padding: 20px;
     }
 }

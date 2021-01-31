@@ -14,11 +14,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-a,
-button {
-  transition: all 0.5s ease;
-}
-
 ul,
 ol {
   list-style: none;
@@ -30,6 +25,11 @@ a {
 
 * {
   margin: 0 auto;
+}
+
+a,
+button {
+  transition: all 0.5s ease;
 }
 
 .header .menu__list-item a:after, .header .menu__list-item a:before {
@@ -68,4 +68,30 @@ a {
 }
 .navbar__link:hover {
   color: #2091f9;
+}
+
+@media only screen and (max-width: 600px) {
+  .notfound {
+    padding: 150px 0 50px 0;
+  }
+  .notfound__pretitle {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .notfound__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+  }
+  .notfound__subtitle {
+    width: 90%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .pre_menu {
+    padding: 20px;
+  }
 }
