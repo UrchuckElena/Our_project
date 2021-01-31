@@ -1,0 +1,193 @@
+[{
+        "id": 1,
+        "image": "assets/img/image02.png",
+        "title": "Silver plate",
+        "price": "$32.00"
+    },
+    {
+        "id": 2,
+        "image": "assets/img/image05.png",
+        "title": "Vase",
+        "price": "$24.00"
+    },
+    {
+        "id": 3,
+        "image": "assets/img/image07.png",
+        "title": "Flowerpot",
+        "price": "$26.00"
+    },
+    {
+        "id": 4,
+        "image": "assets/img/image09.png",
+        "title": "Clay vase",
+        "price": "$30.00"
+    },
+    {
+        "id": 5,
+        "image": "assets/img/image40.jpg",
+        "title": "Soap",
+        "price": "$21.00"
+    },
+    {
+        "id": 6,
+        "image": "assets/img/image48.jpg",
+        "title": "Small plate",
+        "price": "$19.00"
+    },
+    {
+        "id": 7,
+        "image": "assets/img/image47.jpg",
+        "title": "Big plate",
+        "price": "$21.00"
+    },
+    {
+        "id": 8,
+        "image": "assets/img/image46.jpg",
+        "title": "White plate",
+        "price": "$17.00"
+    },
+    {
+        "id": 9,
+        "image": "assets/img/image44.jpg",
+        "title": "Glamorous plate",
+        "price": "$18.00"
+    },
+    {
+        "id": 10,
+        "image": "assets/img/image43.jpg",
+        "title": "Set of plates",
+        "price": "$34.00"
+    },
+    {
+        "id": 11,
+        "image": "assets/img/image45.jpg",
+        "title": "Plate for food",
+        "price": "$12.00"
+    },
+    {
+        "id": 12,
+        "image": "assets/img/image06.png",
+        "title": "Flavored sticks",
+        "price": "$16.00"
+    },
+    {
+        "id": 13,
+        "image": "assets/img/image02.png",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 14,
+        "image": "assets/img/image05.png",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 15,
+        "image": "assets/img/image07.png",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 16,
+        "image": "assets/img/image09.png",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 17,
+        "image": "assets/img/image02.png",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 18,
+        "image": "assets/img/image05.png",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 19,
+        "image": "assets/img/image07.png",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 20,
+        "image": "assets/img/image09.png",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 21,
+        "image": "assets/img/image40.jpg",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 22,
+        "image": "assets/img/image48.jpg",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 23,
+        "image": "assets/img/image47.jpg",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 24,
+        "image": "assets/img/image46.jpg",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 25,
+        "image": "assets/img/image44.jpg",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 26,
+        "image": "assets/img/image43.jpg",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 27,
+        "image": "assets/img/image45.jpg",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 28,
+        "image": "assets/img/image06.png",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 29,
+        "image": "assets/img/image02.png",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 30,
+        "image": "assets/img/image05.png",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 31,
+        "image": "assets/img/image07.png",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    },
+    {
+        "id": 32,
+        "image": "assets/img/image09.png",
+        "title": "Form Barstool",
+        "price": "$32.00"
+    }
+]

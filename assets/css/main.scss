@@ -1,0 +1,62 @@
+@import "reset";
+* {
+    margin: 0 auto;
+}
+
+body {
+    background-attachment: fixed;
+}
+
+.mobile-menu {
+    background: rgb(37, 43, 66);
+}
+
+.header {
+    &__main-menu a.menu__link {
+        color: #fff;
+        &--active,
+        &:hover {
+            color: #2091f9;
+        }
+    }
+    .menu__list-item {
+        & a:after,
+        & a:before {
+            background-color: #2091f9;
+        }
+    }
+    &.scrolled {
+        background: rgba(37, 43, 66, .9);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .list-item1,
+    .list-item4 {
+        border: 1px solid #fff;
+    }
+    .list-item2 {
+        &__link {
+            color: #12cee7;
+        }
+        &__inlet {
+            border: 2px solid #12cee7;
+        }
+    }
+}
+
+.header__hamburger.is-active .header__hamburger-inner,
+.header__hamburger.is-active .header__hamburger-inner:before,
+.header__hamburger.is-active .header__hamburger-inner:after {
+    background-color: #fff;
+    outline: 0 none;
+}
+
+.navbar {
+    &__link {
+        color: #fff;
+    }
+}
+
+.first-screen {
+    background-attachment: fixed;
+}

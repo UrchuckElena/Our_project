@@ -1,0 +1,13 @@
+$(document).ready(function(){
+    $('.questions').click(function(){
+        if($(this).parents(".blocks_accordion").hasClass("active")){
+            $(this).next(".text").slideUp(200);
+            $(this).parents(".blocks_accordion").removeClass("active");
+        }else{
+            $(".blocks_accordion.active").find(".text").slideUp(200);
+            $(".blocks_accordion.active").removeClass("active");
+            $(this).next(".text").slideDown(200);
+            $(this).parents(".blocks_accordion").addClass("active");
+        }
+    });
+});

@@ -1,0 +1,61 @@
+[{
+        "name": "Alex Rozinski",
+        "description": "Всё хорошо, спасибо за то, что увидел бабушку счастливой",
+        "date": "10.01.2021",
+        "photo": "https://static.ngs.ru/news/2017/preview/8b391ede2caad2af41d047ada7beb03c0b1834d9_824.jpg"
+    },
+    {
+        "date": "09.01.2021",
+        "name": "Sergey Kozenko",
+        "description": "Ваза хорошего качества. Выглядит симпатично. За такие деньги очень классный продукт.",
+        "photo": "assets/img/image55.jpg"
+    },
+    {
+        "name": "Anna Michenina",
+        "description": "Хорошая ваза! Стильная и качественная, покупкой более чем довольна. И цена очень приятная.",
+        "date": "08.01.2021",
+        "photo": "assets/img/image56.jpg"
+    },
+    {
+        "name": "Andrii Nizovii",
+        "description": "гарна вазочка!!! (прийшла за сутку ) за такі гроші просто бомба)) підходить для легких букетиків або штучних квітів",
+        "date": "07.01.2021",
+        "photo": "assets/img/image53.jpg"
+    },
+    {
+        "name": "Alexander Kovalenko",
+        "description": "Ваза як ваза, ваги достатньо для великого букету роз - не перекидається",
+        "date": "06.01.2021",
+        "photo": "assets/img/image54.jpg"
+    },
+    {
+        "name": "Elena Yurchyk",
+        "description": "Спасибо! Все было хорошо упаковано. Ваза идёт в заводской коробке. Можно на подарок. Сама ваза именно то что я хотела! Простая ! Стекло чистое ! Очень довольна покупкой! Если вы ищите что-то простое чтобы подчеркнуть букет это самое оно!",
+        "date": "05.01.2021",
+        "photo": "https://avatars.githubusercontent.com/u/71889956?s=400&u=4e30de824bbd15523af55c6b97861a0de97de02d&v=4"
+    },
+    {
+        "name": "Misha Kislyk",
+        "description": "Самая лучшая ваза: простая, красивая, удобная.",
+        "date": "04.01.2021",
+        "photo": "https://sun9-38.userapi.com/impf/c637316/v637316752/4a8fe/b0QQZV63lGo.jpg?size=400x0&quality=90&crop=342,0,1365,1365&sign=a73b5fd2eb77a9e151f35aff857c76c9&ava=1"
+    },
+    {
+        "name": "Andrii Skarlat",
+        "description": "Ваза дуже гарна,але тільки для високих квітів, ціна чудова!!!",
+        "date": "03.01.2021",
+        "photo": "assets/img/image57.jpg"
+    },
+    {
+        "name": "Kiril Undefined",
+        "description": "Стоит, приносит красоту, норм",
+        "date": "02.01.2021",
+        "photo": "assets/img/image59.jpg"
+    },
+    {
+        "name": "Alex Leybiclhenko",
+        "description": "Прекрасная ваза! Простая, лаконичная, цена просто чудная. Однажды упала на ковролин и совершенно не повредилась. Возможно, просто повезло, но и о качестве это говорит тоже. Прекрасная покупка",
+        "date": "01.01.2021",
+        "photo": "assets/img/image58.jpg"
+    }
+]
