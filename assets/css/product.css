@@ -24,10 +24,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  font-size: 14px;
-}
-
 .header .menu__list-item a:after, .header .menu__list-item a:before {
   background-color: #000;
 }
@@ -64,11 +60,6 @@ body {
 }
 .navbar__link:hover {
   color: #2091f9;
-}
-
-.scrollTop__btn {
-  bottom: 40px;
-  right: 40px;
 }
 
 #imageGallery li {
@@ -794,6 +785,17 @@ body {
   justify-content: flex-start;
   position: relative;
 }
+.our_product .item_slider:hover p {
+  color: #2091f9;
+}
+.our_product .item_slider:hover .product_photo {
+  transform: scale(1.05);
+}
+.our_product .item_slider:hover .product_photo .like_link {
+  animation-duration: 2s;
+  animation-name: anima;
+  animation-iteration-count: infinite;
+}
 .our_product .item_slider .like_link {
   width: 38px;
   height: 38px;
@@ -814,11 +816,11 @@ body {
   fill: none;
   transition: fill 0.3s;
 }
-.our_product .item_slider .like_link svg:hover {
+.our_product .item_slider .like_link.clicked svg {
   fill: red;
   stroke: red;
 }
-.our_product .item_slider .like_link.clicked svg {
+.our_product .item_slider .like_link:hover svg {
   fill: red;
   stroke: red;
 }
@@ -867,6 +869,17 @@ body {
   line-height: 30px;
 }
 
+@keyframes anima {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .pixel_btn {
   position: relative;
   width: 155px;

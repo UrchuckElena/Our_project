@@ -373,7 +373,7 @@ a {
 }
 .shop_filter .price_filter .extra-controls input {
   height: 58px;
-  width: 130px;
+  width: 115px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   background: #FFFFFF;
@@ -925,6 +925,10 @@ a {
 @media screen and (max-width: 400px) {
   .jq-selectbox.jqselect.select {
     padding-left: 7px;
+  }
+
+  .shop_item .shop_head_menu .sort_select span {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 380px) {
