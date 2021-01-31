@@ -15,11 +15,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-a,
-button {
-  transition: all 0.5s ease;
-}
-
 ul,
 ol {
   list-style: none;
@@ -368,7 +363,7 @@ body {
   color: #BDBDBD;
   border-radius: 50%;
   right: 0;
-  font-size: 23px;
+  font-size: 20px;
   display: inline-block;
   transition: transform 0.5s;
 }
@@ -1037,6 +1032,10 @@ body {
   .product_main .product_preview {
     padding: 25px 25px 50px 25px;
   }
+
+  .product_main .product_preview .product_sidebar .product_buttons .prod_btn1 {
+    padding: 6px 8px;
+  }
 }
 @media screen and (max-width: 450px) {
   #imageGallery li img {
@@ -1090,6 +1089,12 @@ body {
 
   .our_product .item_slider .like_link {
     right: 15px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .product_main .product_tabs > ul > li {
+    padding: 8px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 380px) {

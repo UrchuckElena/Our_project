@@ -14,11 +14,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-a,
-button {
-  transition: all 0.5s ease;
-}
-
 ul,
 ol {
   list-style: none;
@@ -530,9 +525,15 @@ body {
   justify-content: flex-start;
 }
 #card_item #product_list .product_item:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
-#card_item #product_list .product_item:hover:hover p {
+#card_item #product_list .product_item:hover .pixel_btn, #card_item #product_list .product_item:hover .like_link {
+  animation-duration: 2s;
+  animation-name: anima;
+  animation-iteration-count: infinite;
+}
+#card_item #product_list .product_item:hover p {
   color: #2091f9;
 }
 #card_item #product_list .product_item .off_btn {
@@ -702,6 +703,17 @@ body {
   display: block;
 }
 
+@keyframes anima {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .pixel_btn {
   position: relative;
   display: block;

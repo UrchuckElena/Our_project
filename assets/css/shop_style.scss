@@ -513,8 +513,14 @@ body {
             position: relative;
             justify-content: flex-start;
             &:hover{
+                box-shadow: 0 0 5px rgba(0,0,0,.3);
                 transform: scale(1.05);
-                &:hover p{
+                .pixel_btn, .like_link{
+                    animation-duration: 2s;
+                    animation-name: anima;
+                    animation-iteration-count:infinite;
+                }
+                p{
                     color: rgb(32,145,249);
                 }
             }
@@ -536,6 +542,7 @@ body {
                 padding-top: 9px;
                 &:hover{
                     transform: scale(1.1);
+
                     &:hover svg{
                         fill: red;
                         stroke: red;
@@ -692,6 +699,18 @@ body {
                 }
             }
         }
+    }
+}
+
+@keyframes anima {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
     }
 }
 
