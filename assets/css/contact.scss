@@ -215,7 +215,7 @@
                         justify-content: center;
                         align-items: center;
                         margin: 0 auto;
-                        a {
+                        .info_icon {
                             text-decoration: none;
                             width: 65px;
                             height: 65px;
@@ -238,11 +238,15 @@
                             &:hover {
                                 background-color: #2091F9;
                                 color: #fff;
+                                i {
+                                    color: #fff;
+                                }
                             }
                             i {
                                 font-size: 40px;
                                 color: #2091f9;
                             }
+
                         }
                         .main_information {
                             font-weight: 500;

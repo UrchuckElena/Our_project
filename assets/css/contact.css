@@ -14,11 +14,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-a,
-button {
-  transition: all 0.5s ease;
-}
-
 ul,
 ol {
   list-style: none;
@@ -239,7 +234,7 @@ a {
   align-items: center;
   margin: 0 auto;
 }
-.contact .contact_wrap .contact_info ul li .info_wrap a {
+.contact .contact_wrap .contact_info ul li .info_wrap .info_icon {
   text-decoration: none;
   width: 65px;
   height: 65px;
@@ -250,7 +245,7 @@ a {
   align-items: center;
   transition: all 0.2s ease;
 }
-.contact .contact_wrap .contact_info ul li .info_wrap a::before {
+.contact .contact_wrap .contact_info ul li .info_wrap .info_icon::before {
   position: absolute;
   content: "";
   width: 65px;
@@ -260,11 +255,14 @@ a {
   border: 1px solid transparent;
   border-radius: 50%;
 }
-.contact .contact_wrap .contact_info ul li .info_wrap a:hover {
+.contact .contact_wrap .contact_info ul li .info_wrap .info_icon:hover {
   background-color: #2091F9;
   color: #fff;
 }
-.contact .contact_wrap .contact_info ul li .info_wrap a i {
+.contact .contact_wrap .contact_info ul li .info_wrap .info_icon:hover i {
+  color: #fff;
+}
+.contact .contact_wrap .contact_info ul li .info_wrap .info_icon i {
   font-size: 40px;
   color: #2091f9;
 }
