@@ -45,9 +45,6 @@
     }
 }
 
-body {
-    font-size: 14px;
-}
 
 //Стили для селекта
 .jq-selectbox.jqselect.select {
@@ -99,10 +96,6 @@ body {
     }
 }
 
-.scrollTop__btn{
-    bottom: 40px;
-    right: 40px;
-}
 
 .jq-selectbox li.selected {
     background-color: #fff;
@@ -479,6 +472,13 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            span{
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 16px;
+                letter-spacing: 0.1px;
+                color: #737373;
+            }
         }
         .btn {
             display: inline-block;
@@ -515,7 +515,7 @@ body {
             &:hover{
                 box-shadow: 0 0 5px rgba(0,0,0,.3);
                 transform: scale(1.05);
-                .pixel_btn, .like_link{
+                .like_link{
                     animation-duration: 2s;
                     animation-name: anima;
                     animation-iteration-count:infinite;
@@ -542,7 +542,6 @@ body {
                 padding-top: 9px;
                 &:hover{
                     transform: scale(1.1);
-
                     &:hover svg{
                         fill: red;
                         stroke: red;
@@ -622,7 +621,7 @@ body {
                 flex-direction: row;
                 width: 100%;
                 padding: 20px;
-                margin-bottom: 10px;
+                margin-bottom: 30px;
                 background-color: #fff;
                 &:last-child {
                     margin-bottom: 30px;
@@ -707,7 +706,7 @@ body {
         transform: scale(1);
     }
     50%{
-        transform: scale(1.05);
+        transform: scale(1.1);
     }
     100%{
         transform: scale(1);
@@ -913,6 +912,12 @@ body {
         align-items: center;
         flex-direction: column;
         padding: 45px 0 25px 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .jq-selectbox.jqselect.select {
+        padding-left: 7px;
     }
 }
 
