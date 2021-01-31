@@ -14,10 +14,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-a,
-button {
-  transition: all 0.5s ease;
-}
 
 ul,
 ol {
