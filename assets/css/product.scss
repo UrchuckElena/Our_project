@@ -49,6 +49,11 @@ body {
     }
 }
 
+.scrollTop__btn {
+    bottom: 40px;
+    right: 40px;
+}
+
 //Gallery
 #imageGallery li {
     overflow: hidden;
@@ -545,6 +550,7 @@ body {
                 .modal {
                     width: 90%;
                     max-width: 600px;
+                    height: auto;
                     display: block;
                     margin: 0 auto;
                     position: relative;

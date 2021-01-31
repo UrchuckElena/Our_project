@@ -90,7 +90,7 @@ $(document).ready(function (){
                             </a>
                         </div>
                         <div class="product_photo">
-                            <a href="javascript:void(0)"><img class="item_img" src="${f.image}" alt=""></a>
+                            <a href="product.html"><img class="item_img" src="${f.image}" alt=""></a>
                             <div class="favorite favorite-list">
                             <a class="like_link" href="javascript:void(0)">
                                 <svg class="like" width="20" height="20" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,12 +100,12 @@ $(document).ready(function (){
                         </div>
                         </div>
                         <div class="shop_description">
-                        <a href="#">
-                        <p>${f.title}</p>
-                        </a>
+                            <a href="product.html">
+                                <p>${f.title}</p>
+                            </a>
                         <div class="buy_box">
                             <span>${f.price}</span>
-                            <a class="pixel_btn" href="javascript:void(0)">add to cart</a>
+                            <a class="pixel_btn" href="#">add to cart</a>
                         </div>
                         <div class="products_color">
                             <form>
@@ -120,7 +120,7 @@ $(document).ready(function (){
                             </form>
                          </div>
                          <div class="off_btn">
-                            <a class="pixel_btn off_bnt" href="javascript:void(0)">add to cart</a>
+                            <a class="pixel_btn off_bnt" href="#">add to cart</a>
                          </div>
                         </div>
                     </li>`);
@@ -150,12 +150,10 @@ $(document).ready(function (){
     $(".shop_filter_btn").click(function(){
         $("#mobile_filter, #menu_shadow").toggleClass("opened");
     });
-    $("#menu_shadow").click(function(){
+    $("#menu_shadow, .close_filter").click(function(){
         $("#mobile_filter, #menu_shadow").removeClass("opened");
     });
-    $(".close_filter").click(function(){
-        $("#mobile_filter, #menu_shadow").removeClass("opened");
-    });
+
 });
 
 //Cookie

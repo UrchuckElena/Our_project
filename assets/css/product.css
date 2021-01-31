@@ -71,6 +71,11 @@ body {
   color: #2091f9;
 }
 
+.scrollTop__btn {
+  bottom: 40px;
+  right: 40px;
+}
+
 #imageGallery li {
   overflow: hidden;
 }
@@ -561,6 +566,7 @@ body {
 .product_main .product_tabs .tabs_info2 .modal-wrapper .modal {
   width: 90%;
   max-width: 600px;
+  height: auto;
   display: block;
   margin: 0 auto;
   position: relative;
@@ -1100,3 +1106,5 @@ body {
     width: 100%;
   }
 }
+
+/*# sourceMappingURL=product.css.map */
