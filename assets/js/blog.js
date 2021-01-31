@@ -11,13 +11,13 @@ $(document).ready(function() {
                     $('#post_article ').append(`
                     <div class="head_article">
                         <div class="article_img">
-                            <a href="#" target="_blank"><img src="${f.image}" alt=""></a>
+                            <a href="article.html"><img src="${f.image}" alt=""></a>
                         </div>
                         <div class="article_main">
                             <div class="article_text">
                                 <span>${f.date}</span>
-                                <h3>${f.title}</h3>
-                                <p>${f.text}</p>
+                                <a href="article.html"><h3>${f.title}</h3>
+                                <p>${f.text}</p></a>
                             </div>
                             <div class="blog_link">
                                 <a href="#" target="_blank">Google</a>
