@@ -14,11 +14,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-a,
-button {
-  transition: all 0.5s ease;
-}
-
 ul,
 ol {
   list-style: none;
@@ -207,38 +202,38 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .login .log_btn .line_or span::before {
+  .sign .sign_btn .line_or span::before {
     width: 200px;
   }
 
-  .login .log_btn .line_or span::after {
+  .sign .sign_btn .line_or span::after {
     width: 200px;
   }
 }
 @media screen and (max-width: 500px) {
-  .login .log_btn .line_or span::before {
+  .sign .sign_btn .line_or span::before {
     width: 160px;
   }
 
-  .login .log_btn .line_or span::after {
+  .sign .sign_btn .line_or span::after {
     width: 160px;
   }
 }
 @media screen and (max-width: 420px) {
-  .login .log_btn .line_or span::before {
+  .sign .sign_btn .line_or span::before {
     width: 130px;
   }
 
-  .login .log_btn .line_or span::after {
+  .sign .sign_btn .line_or span::after {
     width: 130px;
   }
 }
 @media screen and (max-width: 340px) {
-  .login .log_btn .line_or span::before {
+  .sign .sign_btn .line_or span::before {
     width: 110px;
   }
 
-  .login .log_btn .line_or span::after {
+  .sign .sign_btn .line_or span::after {
     width: 110px;
   }
 }
