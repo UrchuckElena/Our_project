@@ -6,7 +6,7 @@ $(document).ready(function () {
   }), $(".menu-shadow").click(function () {
     $(".header__hamburger").removeClass("is-active"), $(".mobile-menu, .menu-shadow").removeClass("opened");
   }), $(window).scroll(function () {
-    $(window).scrollTop() > 250 ? $(".header").addClass("scrolled") : $(".header").removeClass("scrolled");
+    $(window).scrollTop() > 50 ? $(".header").addClass("scrolled") : $(".header").removeClass("scrolled");
   }), $(".like").on("click", function () {
     $(this).toggleClass("clicked");
   }), $(".menu__link").click(function () {

@@ -11,7 +11,7 @@ $(document).ready(function() {
     });
 
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 250) {
+        if ($(window).scrollTop() > 50) {
             $(".header").addClass("scrolled");
         } else {
             $(".header").removeClass("scrolled");
@@ -130,6 +130,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
 
 // lazy 
 let lazyLoadInstance = new LazyLoad({

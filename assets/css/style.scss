@@ -7,7 +7,7 @@
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, .7);
-    z-index: 100;
+    z-index: 999;
     opacity: 0;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
@@ -46,7 +46,6 @@
     -ms-flex-pack: center;
     justify-content: center;
     padding-top: 50px;
-    position: relative;
     &__list-item {
         padding: 35px 20px 0 20px;
     }
@@ -62,12 +61,12 @@
         position: relative;
     }
     &__menu {
-        position: absolute;
-        left: 0;
-        top: 70px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     &__inlet {
-        width: 150px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1704,6 +1703,45 @@
     }
 }
 
+.modal__content {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: translate3d(0px, -100%, 0px);
+        transform: translate3d(0px, -100%, 0px);
+    }
+    100% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transform: translate3d(0px, -100%, 0px);
+        transform: translate3d(0px, -100%, 0px);
+    }
+    100% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
 .scrollTop__btn {
     width: 55px;
     height: 55px;
@@ -1778,7 +1816,8 @@ span.scrollTop {
             flex-direction: column;
         }
         &__logo {
-            padding-bottom: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
             margin: 0 auto;
         }
         &__main-menu {
