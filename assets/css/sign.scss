@@ -90,30 +90,31 @@
                 }
             }
         }
-    }
-    .sign_btn {
-        button {
-            width: 100%;
-            height: 58px;
-            border-radius: 5px;
-            outline: none;
-            cursor: pointer;
-            margin: 30px 0;
-            border: 1px solid transparent;
-        }
         .sign_button {
-            background: #2091F9;
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: 0.1px;
-            color: #FFFFFF;
-            &:hover {
-                background: #ffffff;
-                color: #2091F9;
-                border: 2px solid #2091F9;
+            margin: 30px 0;
+            button {
+                width: 100%;
+                height: 58px;  
+                outline: none;
+                cursor: pointer;
+                background: #2091F9;
+                border: 1px solid transparent;
+                color: #FFFFFF;
+                border-radius: 5px;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                &:hover {
+                    background: #ffffff;
+                    color: #2091F9;
+                    border: 2px solid #2091F9;
+                }
             }
         }
+        
+    }
+    .sign_btn {
         .line_or {
             position: relative;
             text-align: center;
@@ -144,15 +145,20 @@
             }
         }
         .face_btn {
+            display: block;
+            width: 100%;
+            height: 54px;
+            margin: 30px 0;
             background: #3950C5;
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 28px;
-            letter-spacing: 0.2px;
             color: #FFFFFF;
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
             &:hover {
                 background: #ffffff;
                 color: #3950C5;

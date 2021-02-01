@@ -115,24 +115,24 @@ a {
   text-decoration: none;
   color: #2091F9;
 }
-.sign .sign_btn button {
+.sign .sign_form .sign_button {
+  margin: 30px 0;
+}
+.sign .sign_form .sign_button button {
   width: 100%;
   height: 58px;
-  border-radius: 5px;
   outline: none;
   cursor: pointer;
-  margin: 30px 0;
-  border: 1px solid transparent;
-}
-.sign .sign_btn .sign_button {
   background: #2091F9;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  border-radius: 5px;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.1px;
-  color: #FFFFFF;
 }
-.sign .sign_btn .sign_button:hover {
+.sign .sign_form .sign_button button:hover {
   background: #ffffff;
   color: #2091F9;
   border: 2px solid #2091F9;
@@ -167,15 +167,20 @@ a {
   right: 0;
 }
 .sign .sign_btn .face_btn {
+  display: block;
+  width: 100%;
+  height: 54px;
+  margin: 30px 0;
   background: #3950C5;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: 0.2px;
   color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
 }
 .sign .sign_btn .face_btn:hover {
   background: #ffffff;

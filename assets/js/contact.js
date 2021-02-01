@@ -28,7 +28,21 @@ $(document).ready(function(){
         let mail = $('#mail').val();
         let msg = $('#text').val();
         let msgText = encodeURI('<b>Name </b>: ' + name + '\n<b>Email </b>: ' + mail + '\n<b>Text </b>: ' + msg)
-        if (msg != '' && mail!='') {
+        let valid = true;
+        if(name=''){
+            valid = false;
+        }
+        if(mail=''){
+            valid = false;
+        }else{
+            if(isValidEmail(mail)===false){
+                valid = false;
+            }
+        }
+        if(msg=''){
+            valid = false;
+        }
+        if (valid) {
             $.ajax({
                 url: 'https://api.telegram.org/bot' + BOT_KEY + '/sendMessage',
                 data: 'chat_id=' + CHAT_ID + '&parse_mode=html&text=' + msgText,
