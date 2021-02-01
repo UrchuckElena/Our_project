@@ -92,6 +92,10 @@ a {
 .login .login_form #password:focus {
   border: 2px solid #2091F9;
 }
+.login .login_form #mail:focus::placeholder,
+.login .login_form #password:focus::placeholder {
+  color: transparent;
+}
 .login .login_form .forget_pass {
   display: flex;
   justify-content: flex-end;

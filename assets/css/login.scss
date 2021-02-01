@@ -65,6 +65,9 @@
             &:focus {
                 border: 2px solid #2091F9;
             }
+            &:focus::placeholder{
+                color: transparent;
+            }
         }
         .forget_pass {
             display: flex;
