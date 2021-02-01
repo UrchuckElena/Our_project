@@ -32,22 +32,21 @@
     </header>
     <div class="login">
         <h2>Login</h2>
-        <form action="POST" class="login_form">
-            <p class="preform_text">Email :</p>
-            <input type="email" name="email" id="mail" placeholder="Email@example.com" required>
-            <p class="preform_text">Password :</p>
-            <input type="password" name="pass" id="password" placeholder="Password" required>
-            <a href="javascript:void(0)" target="_blank" class="forget_pass">Forget your password ?</a>
+        <form method="POST">
+            <div class="login_form">
+                <p class="preform_text">Email :</p>
+                <input type="email" name="email" id="mail" placeholder="Email@example.com" required>
+                <p class="preform_text">Password :</p>
+                <input type="password" name="pass" id="password" placeholder="Password" required>
+                <a href="#" target="_blank" class="forget_pass">Forget your password ?</a>
+                <button class="login_btn" type="submit">Login</button>
+            </div>
         </form>
         <div class="log_btn">
-            <button class="login_btn" type="submit">Login</button>
             <div class="line_or">
                 <span>Or</span>
             </div>
-            <button class="face_btn" type="submit"><i class="icon-facebook-social"></i>Login with Facebook</button>
-            <div class="have_account">
-                <p>Already have an account? <span><a href="#" target="_blank">Sign in here</a></span></p>
-            </div>
+            <a href="#" target="_blank" class="face_btn"><i class="icon-facebook-social"></i>Login with Facebook</a>
         </div>
     </div>
 

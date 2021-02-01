@@ -6,13 +6,13 @@ function initMap() {
     document.getElementById('map_img').remove();
     document.getElementById('map_link').remove();
 
-    map = L.map('map').setView([46.97149718857742, 32.00419775502058], 17);
+    map = L.map('map').setView([61.218004887765794, -149.90029287881958], 17);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    L.marker([46.97149718857742, 32.00419775502058]).addTo(map)
+    L.marker([61.218004887765794, -149.90029287881958]).addTo(map)
     
 }
 
@@ -28,7 +28,21 @@ $(document).ready(function(){
         let mail = $('#mail').val();
         let msg = $('#text').val();
         let msgText = encodeURI('<b>Name </b>: ' + name + '\n<b>Email </b>: ' + mail + '\n<b>Text </b>: ' + msg)
-        if (msg != '' && mail!='') {
+        let valid = true;
+        if(name==''){
+            valid = false;
+        }
+        if(mail==''){
+            valid = false;
+        }else{
+            if(isValidEmail(mail)===false){
+                valid = false;
+            }
+        }
+        if(msg==''){
+            valid = false;
+        }
+        if(valid) {
             $.ajax({
                 url: 'https://api.telegram.org/bot' + BOT_KEY + '/sendMessage',
                 data: 'chat_id=' + CHAT_ID + '&parse_mode=html&text=' + msgText,
