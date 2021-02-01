@@ -7,11 +7,11 @@ var map;
 function initMap() {
   document.getElementById('map_img').remove();
   document.getElementById('map_link').remove();
-  map = L.map('map').setView([46.97149718857742, 32.00419775502058], 17);
+  map = L.map('map').setView([61.218004887765794, -149.90029287881958], 17);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
-  L.marker([46.97149718857742, 32.00419775502058]).addTo(map);
+  L.marker([61.218004887765794, -149.90029287881958]).addTo(map);
 } // ValidEmail
 
 
@@ -28,11 +28,11 @@ $(document).ready(function () {
     var msgText = encodeURI('<b>Name </b>: ' + name + '\n<b>Email </b>: ' + mail + '\n<b>Text </b>: ' + msg);
     var valid = true;
 
-    if (name = '') {
+    if (name == '') {
       valid = false;
     }
 
-    if (mail = '') {
+    if (mail == '') {
       valid = false;
     } else {
       if (isValidEmail(mail) === false) {
@@ -40,7 +40,7 @@ $(document).ready(function () {
       }
     }
 
-    if (msg = '') {
+    if (msg == '') {
       valid = false;
     }
 
