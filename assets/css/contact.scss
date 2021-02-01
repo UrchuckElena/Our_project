@@ -306,6 +306,9 @@
                             letter-spacing: 0.2px;
                             color: #BDBDBD;
                         }
+                        &:focus::placeholder{
+                            color: transparent;
+                        }
                     }
                     textarea {
                         padding: 24px 20px;

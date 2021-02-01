@@ -326,6 +326,10 @@ a {
   letter-spacing: 0.2px;
   color: #BDBDBD;
 }
+.contact .contact_wrap .contact_form .form_wrap form input:focus::placeholder,
+.contact .contact_wrap .contact_form .form_wrap form textarea:focus::placeholder {
+  color: transparent;
+}
 .contact .contact_wrap .contact_form .form_wrap form textarea {
   padding: 24px 20px;
   height: 200px;

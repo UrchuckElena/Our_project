@@ -97,6 +97,11 @@
                 &:hover {
                     transform: scale(1.1);
                     transition: all 0.2s ease;
+                    .article_text{
+                        a h3{
+                            color: #8ec2f2;
+                        }
+                    }
                 }
                 .article_img {
                     img {
@@ -145,8 +150,9 @@
                             line-height: 24px;
                             letter-spacing: 0.1px;
                             color: #8EC2F2;
-                            &:hover {
-                                border-bottom: 2px solid red;
+                            &:hover{
+                                color: #0c0c6d;
+                                transform: scale(1.2);
                             }
                         }
                     }
