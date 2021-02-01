@@ -1175,7 +1175,7 @@ a {
 }
 
 .post {
-  height: 700px;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
