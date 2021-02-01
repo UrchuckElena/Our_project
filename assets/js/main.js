@@ -108,7 +108,7 @@ $(document).ready(function (){
                             <a class="pixel_btn" href="#">add to cart</a>
                         </div>
                         <div class="products_color">
-                            <form>
+                            <form method="POST">
                                 <input type="checkbox" id="blue_${i}" name="colors">
                                 <label class="blue" title="Синий" for="blue_${i}"></label>
                                 <input type="checkbox" id="green_${i}" name="colors">

@@ -507,6 +507,7 @@
         justify-content: space-between;
         margin: 0 -10px;
         .product_item {
+            width: calc(25% - 30px);
             display: flex;
             margin: 0 10px 45px;
             flex-direction: column;
@@ -573,20 +574,18 @@
                 }
             }
             .product_photo {
-                width: 230px;
                 position: relative;
                 overflow: hidden;
                 &:before {
                     content: "";
                     display: block;
-                    padding-top: 87%;
+                    padding-top: 79%;
                 }
                 img {
                     position: absolute;
                     left: 50%;
                     top: 50%;
                     width: 100%;
-                    height: 100%;
                     transform: translate(-50%, -50%);
                 }
             }
@@ -743,6 +742,12 @@
     }
 }
 
+
+@media screen and (max-width: 1420px){
+    #card_item #product_list .product_item {
+        width: calc(33% - 30px);
+    }
+}
 @media screen and (max-width: 1200px) {
     #card_item #product_list.list-view .product_item .product_photo {
         width: 270px;
@@ -752,6 +757,9 @@
 @media screen and (max-width: 1189px) {
     #card_item #product_list {
         justify-content: space-around;
+    }
+    #card_item #product_list .product_item {
+        width: calc(50% - 30px);
     }
 }
 
@@ -828,11 +836,17 @@
     .shop_page_title .shop_page_title_text {
         padding: 30px 90px;
     }
+    #card_item #product_list .product_item {
+        width: calc(33% - 30px);
+    }
 }
 
 @media screen and (max-width: 790px) {
     #card_item #product_list {
         justify-content: space-around;
+    }
+    #card_item #product_list .product_item {
+        width: calc(50% - 30px);
     }
 }
 
@@ -856,8 +870,14 @@
         display: block;
     }
     #card_item #product_list.list-view .product_item .like_link {
-        top: 9px;
+        top: 18px;
         right: 7px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #card_item #product_list .product_item {
+        width: calc(100% - 30px);
     }
 }
 
@@ -876,7 +896,10 @@
         font-size: 16px;
     }
     #card_item #product_list.list-view .product_item .product_photo:before {
-        padding-top: 85%;
+        padding-top: 81%;
+    }
+    #card_item #product_list.list-view .product_item .like_link {
+        top: 9px;
     }
 }
 
