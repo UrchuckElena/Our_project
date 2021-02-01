@@ -92,6 +92,10 @@ a {
 .sign .sign_form #password:focus {
   border: 2px solid #2091F9;
 }
+.sign .sign_form #mail:focus::placeholder,
+.sign .sign_form #password:focus::placeholder {
+  color: transparent;
+}
 .sign .sign_form .agree {
   display: flex;
   align-items: center;

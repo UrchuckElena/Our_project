@@ -14,11 +14,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-a,
-button {
-  transition: all 0.5s ease;
-}
-
 ul,
 ol {
   list-style: none;
@@ -257,6 +252,9 @@ a {
   transform: scale(1.1);
   transition: all 0.2s ease;
 }
+.blog_post .post_article .head_article:hover .article_text a h3 {
+  color: #8ec2f2;
+}
 .blog_post .post_article .head_article .article_img img {
   object-fit: cover;
   width: 100%;
@@ -304,7 +302,8 @@ a {
   color: #8EC2F2;
 }
 .blog_post .post_article .head_article .article_main .blog_link a:hover {
-  border-bottom: 2px solid red;
+  color: #0c0c6d;
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 1133px) {

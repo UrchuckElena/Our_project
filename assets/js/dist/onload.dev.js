@@ -11,7 +11,7 @@ $(document).ready(function () {
     $(".mobile-menu, .menu-shadow").removeClass("opened");
   });
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 250) {
+    if ($(window).scrollTop() > 50) {
       $(".header").addClass("scrolled");
     } else {
       $(".header").removeClass("scrolled");
