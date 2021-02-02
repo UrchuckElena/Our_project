@@ -111,12 +111,16 @@ a {
 }
 .catalog_block .catalog_box .catalog_item .catalog_photo .catalog_name {
   position: absolute;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  background: #2091f9;
   bottom: 20px;
   left: 20px;
 }
 .catalog_block .catalog_box .catalog_item .catalog_photo .catalog_name h5 {
   font-size: 30px;
-  color: #000000;
+  color: #fff;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -137,13 +141,51 @@ a {
   transform: scale(1.03);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
 }
+.catalog_block .catalog_box .catalog_item:hover .catalog_name {
+  border: 3px solid #2091f9;
+  background: #fff;
+}
 .catalog_block .catalog_box .catalog_item:hover .catalog_name h5 {
-  color: #00aced;
+  color: #2091f9;
+}
+
+.seo_content {
+  background: #FAFAFA;
+}
+.seo_content .catalog_seo {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.seo_content .catalog_seo h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 26px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.seo_content .catalog_seo p {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding-bottom: 24px;
+}
+.seo_content .catalog_seo ul {
+  list-style: circle;
+}
+.seo_content .catalog_seo ul li {
+  margin-left: 16px;
 }
 
 @media screen and (max-width: 1000px) {
   .catalog_block .catalog_box .catalog_item {
     width: calc(50% - 30px);
+  }
+
+  .catalog_block {
+    padding: 90px 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -161,6 +203,10 @@ a {
 
   .catalog_page_title .catalog_page_title_text h4 {
     text-align: center;
+  }
+
+  .catalog_block {
+    padding: 60px 0;
   }
 }
 @media screen and (max-width: 450px) {
