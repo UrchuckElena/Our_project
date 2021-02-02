@@ -1,0 +1,26 @@
+[
+  {
+    "photo": "assets/img/image03.png",
+    "name": "Chair"
+  },
+  {
+    "photo": "assets/img/image05.png",
+    "name": "Antiques"
+  },
+  {
+    "photo": "assets/img/image43.jpg",
+    "name": "Plate"
+  },
+  {
+    "photo": "assets/img/image40.jpg",
+    "name": "Soap"
+  },
+  {
+    "photo": "assets/img/image52.jpg",
+    "name": "Flower"
+  },
+  {
+    "photo": "assets/img/image09.png",
+    "name": "Vase"
+  }
+]

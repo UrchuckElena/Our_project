@@ -81,48 +81,49 @@ $(document).ready(function (){
             callback: function(data, pagination) {
                 $('#product_list').empty();
                 $.each(data, function (i, f) {
-                    $('#product_list').append(`<li class="product_item">
-                      <div class="favorite">
-                            <a class="like_link" href="javascript:void(0)">
-                                <svg class="like" width="20" height="20" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.3022 2.72346L12.0004 3.40422L12.6985 2.72332C13.7846 1.66396 15.276 1 16.9387 1C20.3433 1 23 3.75848 23 7.03761C23 8.77432 22.2631 10.3504 21.0666 11.4595L21.0516 11.4734L21.0372 11.4879L11.9982 20.5815L2.90797 11.4364L2.89728 11.4256L2.88627 11.4152C1.71766 10.3087 1 8.75166 1 7.03761C1 3.75848 3.65669 1 7.06134 1C8.72443 1 10.2154 1.66391 11.3022 2.72346Z"></path>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="product_photo">
-                            <a href="product.html"><img class="item_img" src="${f.image}" alt=""></a>
-                            <div class="favorite favorite-list">
-                            <a class="like_link" href="javascript:void(0)">
-                                <svg class="like" width="20" height="20" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.3022 2.72346L12.0004 3.40422L12.6985 2.72332C13.7846 1.66396 15.276 1 16.9387 1C20.3433 1 23 3.75848 23 7.03761C23 8.77432 22.2631 10.3504 21.0666 11.4595L21.0516 11.4734L21.0372 11.4879L11.9982 20.5815L2.90797 11.4364L2.89728 11.4256L2.88627 11.4152C1.71766 10.3087 1 8.75166 1 7.03761C1 3.75848 3.65669 1 7.06134 1C8.72443 1 10.2154 1.66391 11.3022 2.72346Z"></path>
-                                </svg>
-                            </a>
-                        </div>
-                        </div>
-                        <div class="shop_description">
-                            <a href="product.html">
-                                <p>${f.title}</p>
-                            </a>
-                        <div class="buy_box">
-                            <span>${f.price}</span>
-                            <a class="pixel_btn" href="#">add to cart</a>
-                        </div>
-                        <div class="products_color">
-                            <form method="POST">
-                                <input type="checkbox" id="blue_${i}" name="colors">
-                                <label class="blue" title="Синий" for="blue_${i}"></label>
-                                <input type="checkbox" id="green_${i}" name="colors">
-                                <label class="green" title="Зеленый" for="green_${i}"></label>
-                                <input type="checkbox" id="orange_${i}" name="colors">
-                                <label class="orange" title="Оранжевый" for="orange_${i}"></label>
-                                <input type="checkbox" id="black_${i}" name="colors">
-                                <label class="black" title="Черный" for="black_${i}"></label>
-                            </form>
-                         </div>
-                         <div class="off_btn">
-                            <a class="pixel_btn off_bnt" href="#">add to cart</a>
-                         </div>
-                        </div>
+                    $('#product_list').append(`
+                        <li class="product_item">
+                            <div class="favorite">
+                                <a class="like_link" href="javascript:void(0)">
+                                    <svg class="like" width="20" height="20" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.3022 2.72346L12.0004 3.40422L12.6985 2.72332C13.7846 1.66396 15.276 1 16.9387 1C20.3433 1 23 3.75848 23 7.03761C23 8.77432 22.2631 10.3504 21.0666 11.4595L21.0516 11.4734L21.0372 11.4879L11.9982 20.5815L2.90797 11.4364L2.89728 11.4256L2.88627 11.4152C1.71766 10.3087 1 8.75166 1 7.03761C1 3.75848 3.65669 1 7.06134 1C8.72443 1 10.2154 1.66391 11.3022 2.72346Z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="product_photo">
+                                <a href="product.html"><img class="item_img" src="${f.image}" alt=""></a>
+                                <div class="favorite favorite-list">
+                                    <a class="like_link" href="javascript:void(0)">
+                                        <svg class="like" width="20" height="20" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.3022 2.72346L12.0004 3.40422L12.6985 2.72332C13.7846 1.66396 15.276 1 16.9387 1C20.3433 1 23 3.75848 23 7.03761C23 8.77432 22.2631 10.3504 21.0666 11.4595L21.0516 11.4734L21.0372 11.4879L11.9982 20.5815L2.90797 11.4364L2.89728 11.4256L2.88627 11.4152C1.71766 10.3087 1 8.75166 1 7.03761C1 3.75848 3.65669 1 7.06134 1C8.72443 1 10.2154 1.66391 11.3022 2.72346Z"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="shop_description">
+                                <a href="product.html">
+                                    <p>${f.title}</p>
+                                </a>
+                                <div class="buy_box">
+                                    <span>${f.price}</span>
+                                    <a class="pixel_btn" href="#">add to cart</a>
+                                </div>
+                                <div class="products_color">
+                                    <form method="POST">
+                                        <input type="checkbox" id="blue_${i}" name="colors">
+                                        <label class="blue" title="Синий" for="blue_${i}"></label>
+                                        <input type="checkbox" id="green_${i}" name="colors">
+                                        <label class="green" title="Зеленый" for="green_${i}"></label>
+                                        <input type="checkbox" id="orange_${i}" name="colors">
+                                        <label class="orange" title="Оранжевый" for="orange_${i}"></label>
+                                        <input type="checkbox" id="black_${i}" name="colors">
+                                        <label class="black" title="Черный" for="black_${i}"></label>
+                                    </form>
+                                </div>
+                                <div class="off_btn">
+                                   <a class="pixel_btn off_bnt" href="#">add to cart</a>
+                                </div>
+                            </div>
                     </li>`);
                 });
             }
