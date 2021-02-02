@@ -1090,6 +1090,10 @@ a {
     padding-top: 51%;
   }
 
+  .pre_menu {
+    padding-left: 30px;
+  }
+
   .our_product .item_slider .price_box {
     margin: 0 auto;
   }
