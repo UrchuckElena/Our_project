@@ -681,6 +681,9 @@ a {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
+.blog__card:hover .card-title__link {
+  color: #8ec2f2;
+}
 .blog__card-wrap {
   width: 100%;
   padding: 29px 34px 26px 28px;
@@ -715,9 +718,6 @@ a {
   line-height: 36px;
   color: #252b42;
   text-transform: capitalize;
-}
-.blog .card-title__link:hover {
-  color: #8ec2f2;
 }
 .blog__date {
   font-weight: bold;

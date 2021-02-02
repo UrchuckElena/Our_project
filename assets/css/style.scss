@@ -658,6 +658,9 @@
             transform: scale(1.1);
             -webkit-transition: all 0.2s ease;
             transition: all 0.2s ease;
+            .card-title__link {
+                color: #8ec2f2;
+            }
         }
         &-wrap {
             width: 100%;
@@ -694,9 +697,6 @@
         line-height: 36px;
         color: #252b42;
         text-transform: capitalize;
-        &:hover {
-            color: #8ec2f2;
-        }
     }
     &__date {
         font-weight: bold;
