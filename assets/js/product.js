@@ -67,7 +67,7 @@ $(document).ready(function () {
         }
     });
 
-    $("#lightSlider").lightSlider({
+    let slider = $("#lightSlider").lightSlider({
         item: 5,
         controls: false,
         loop: true,
@@ -125,6 +125,15 @@ $(document).ready(function () {
             }
 
         ]
+    });
+
+    //arrows for slider
+
+    $('#prev').on('click', function () {
+        slider.goToPrevSlide()
+    })
+    $('#next').on('click', function () {
+        slider.goToNextSlide()
     });
 
     $(window).resize(function () {
