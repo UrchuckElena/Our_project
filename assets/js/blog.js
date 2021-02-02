@@ -11,7 +11,7 @@ $(document).ready(function() {
                     $('#post_article ').append(`
                     <div class="head_article">
                         <div class="article_img">
-                            <a href="article.html"><img src="${f.image}" alt=""></a>
+                            <a href="article.html"><img src="${f.image}" alt="Blog photo"></a>
                         </div>
                         <div class="article_main">
                             <div class="article_text">
