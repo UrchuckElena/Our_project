@@ -11,9 +11,9 @@ $(document).ready(function () {
                     <li class="catalog_item">
                         <div class="catalog_photo">
                             <a href="shop_page.html"><img src="${json[i].photo}" alt="${json[i].name}"></a>
-                        </div>
-                        <div class="catalog_name">
-                            <a href="shop_page.html"><h5>${json[i].name}</h5></a>
+                            <div class="catalog_name">
+                                <a href="shop_page.html"><h5>${json[i].name}</h5></a>
+                            </div>
                         </div>
                     </li>
                 `;

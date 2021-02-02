@@ -93,6 +93,18 @@
       .catalog_photo {
         position: relative;
         overflow: hidden;
+        .catalog_name{
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          h5{
+            font-size: 30px;
+            color: #000000;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+          }
+        }
         &:before {
           content: "";
           display: block;
@@ -106,51 +118,43 @@
           transform: translate(-50%, -50%);
         }
       }
-      .catalog_name{
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        h5{
-          font-size: 30px;
-          color: #000000;
-          font-weight: bold;
-          letter-spacing: 1px;
-          text-transform: uppercase;
+      &:hover{
+        transform: scale(1.03);
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+        .catalog_name{
+          h5{
+            color: #00aced;
+          }
         }
       }
     }
   }
 }
 
-@keyframes bg {
-  0% {
-    background-size:    0 3px,
-    3px 0,
-    0 3px,
-    3px 0;
-  }
-  25% {
-    background-size:    100% 3px,
-    3px 0,
-    0 3px,
-    3px 0;
-  }
-  50% {
-    background-size:    100% 3px,
-    3px 100%,
-    0 3px,
-    3px 0;
-  }
-  75% {
-    background-size:    100% 3px,
-    3px 100%,
-    100% 3px,
-    3px 0;
-  }
-  100% {
-    background-size:    100% 3px,
-    3px 100%,
-    100% 3px,
-    3px 100%;
+@media screen and (max-width: 1000px){
+  .catalog_block .catalog_box .catalog_item {
+    width: calc(50% - 30px);
   }
 }
+
+@media screen and (max-width: 600px){
+  .catalog_block .catalog_box .catalog_item {
+    width: 100%;
+  }
+  .catalog_page_title .catalog_page_title_text {
+    padding: 0;
+  }
+  .catalog_page_title .catalog_page_title_text h2 {
+    text-align: center;
+  }
+  .catalog_page_title .catalog_page_title_text h4{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .catalog_page_title .catalog_page_title_text h4 {
+    padding: 0 10px 50px 10px;
+  }
+}
+
